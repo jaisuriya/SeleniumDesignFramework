@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="jayasuriyapractice.Testcomponents.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Submit Order Test(failed)">
+    <classes>
+      <class name="jayasuriyapractice.SubmitOrderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="OrderHistoryTest"/>
+          <include name="submitOrder"/>
+        </methods>
+      </class> <!-- jayasuriyapractice.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test parallel="tests" name="Error Validations Test(failed)">
+    <classes>
+      <class name="jayasuriyapractice.ErrorValidationsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="LoginErrorValidation"/>
+        </methods>
+      </class> <!-- jayasuriyapractice.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
